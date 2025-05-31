@@ -1,9 +1,9 @@
 from fastapi import APIRouter,HTTPException,requests,Depends
 from sqlalchemy.orm import Session
-from api.auth import Auth
-from db.models import User
-from db.database import get_db
-from db.schemas import PermissionCheckRequest,PermissionResult
+from app.api.auth import Auth
+from app.db.models import User
+from app.db.database import get_db
+from app.db.schemas import PermissionCheckRequest,PermissionResult
 router=APIRouter()
 
 
