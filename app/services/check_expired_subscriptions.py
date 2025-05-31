@@ -7,8 +7,8 @@ from apscheduler.schedulers.asyncio import AsyncIOScheduler
 from datetime import datetime
 import pytz
 from fastapi import FastAPI, logger
-from db import get_db
-from db.models import User
+from app.db import get_db
+from app.db.models import User
 from logging import getLogger
 from dotenv import load_dotenv
 load_dotenv()
