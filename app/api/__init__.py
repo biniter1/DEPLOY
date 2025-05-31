@@ -1,5 +1,5 @@
 from fastapi import APIRouter
-from . import auth, text_to_speech, text_to_image, text_to_video, general, history,MOMO,input,ChatBotContent,enhance,Check_api,generate_answer,text_to_code,role,advanced_model
+from app.api import auth, text_to_speech, text_to_image, text_to_video, general, history,MOMO,input,ChatBotContent,enhance,Check_api,generate_answer,text_to_code,role,advanced_model
 
 router = APIRouter()
 
