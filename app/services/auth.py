@@ -1,15 +1,15 @@
 from fastapi import HTTPException, Depends, Response, APIRouter, Request
-from core.security import create_access_token, SECRET_KEY, ALGORITHM
+from app.core.security import create_access_token, SECRET_KEY, ALGORITHM
 from authlib.integrations.starlette_client import OAuth
 from fastapi.security import OAuth2PasswordBearer
 from fastapi.responses import RedirectResponse
 from starlette.requests import Request
 from sqlalchemy.orm import Session
 from dotenv import load_dotenv
-from db.models import User
+from app.db.models import User
 from datetime import datetime
 from jose import jwt, JWTError
-from db import get_db
+from app.db import get_db
 import logging
 import secrets
 import os
