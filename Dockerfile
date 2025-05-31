@@ -1,11 +1,11 @@
 # Sử dụng một base image Python phù hợp
-FROM python:3.12-slim-bullseye # Hoặc python:3.12-slim hoặc python:3.12-slim-bookworm
+FROM python:3.12-slim-bullseye 
 
 # --- Cài đặt các thư viện hệ thống cần thiết cho OpenCV và các dependencies khác ---
 RUN apt-get update && \
     apt-get install -y \
     libgl1-mesa-glx \
-    libglib2.0-0 && \ # THÊM DÒNG NÀY
+    libglib2.0-0 && \ 
     rm -rf /var/lib/apt/lists/*
 
 # --- Thiết lập môi trường Python ---
