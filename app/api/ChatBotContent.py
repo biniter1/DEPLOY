@@ -1,7 +1,7 @@
 import requests
 from fastapi import APIRouter
 from pydantic import BaseModel
-from db.schemas import ChatRequest
+from app.db.schemas import ChatRequest
 import os
 router = APIRouter()
 
