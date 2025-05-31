@@ -1,7 +1,7 @@
 import os
 from fastapi import APIRouter, Depends
-from db.database import get_db
-from db.models import User
+from app.db.database import get_db
+from app.db.models import User
 from sqlalchemy.orm import Session
 from dotenv import load_dotenv
 
