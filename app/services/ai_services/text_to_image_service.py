@@ -5,7 +5,7 @@ import json
 import os
 from dotenv import load_dotenv
 from googletrans import Translator
-from db.schemas import TTIPrompt
+from app.db.schemas import TTIPrompt
 import secrets
 
 load_dotenv()
