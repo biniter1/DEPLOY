@@ -1,1 +1,1 @@
-from .security import *
+from app.core.security import *
