@@ -6,9 +6,9 @@ from starlette.middleware.sessions import SessionMiddleware
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 from dotenv import load_dotenv
-from api import router
-from services.check_expired_subscriptions import check_expired_subscriptions
-from db import init_db
+from app.api import router
+from app.services.check_expired_subscriptions import check_expired_subscriptions
+from app.db import init_db
 import logging
 import os
 from apscheduler.schedulers.background import BackgroundScheduler
