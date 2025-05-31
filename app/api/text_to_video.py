@@ -1,7 +1,7 @@
 from fastapi import APIRouter, HTTPException
 from fastapi.responses import StreamingResponse
-from services.ai_services.text_to_video_service import TextToVideoService as service
-from db import schemas
+from app.services.ai_services.text_to_video_service import TextToVideoService as service
+from app.db import schemas
 import io
 
 router = APIRouter()
