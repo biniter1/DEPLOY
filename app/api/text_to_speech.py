@@ -1,7 +1,7 @@
 import re
 from fastapi import APIRouter
-from services.ai_services import TextToSpeechService as service
-from db import schemas
+from app.services.ai_services import TextToSpeechService as service
+from app.db import schemas
 
 router = APIRouter()
 
