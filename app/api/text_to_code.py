@@ -5,8 +5,8 @@ from grpc import Status
 import httpx
 from openai import BaseModel
 import requests
-from db import schemas
-from services.ai_services import TextToCodeService as service
+from app.db import schemas
+from app.services.ai_services import TextToCodeService as service
 
 load_dotenv()
 
