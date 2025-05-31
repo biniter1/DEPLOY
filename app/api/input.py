@@ -8,8 +8,8 @@ import io
 from moviepy import VideoFileClip
 import PyPDF2
 import docx
-from db.schemas import *
-from services.analyzeInput import guess_ai_intent
+from app.db.schemas import *
+from app.services.analyzeInput import guess_ai_intent
 import speech_recognition as sr
 from pydub import AudioSegment
 import os
