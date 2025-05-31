@@ -1,6 +1,6 @@
 from fastapi import APIRouter, UploadFile, File
 from services.ai_services import SpeechToTextService as service
-from db import schemas
+from app.db import schemas
 
 router = APIRouter()
 
