@@ -1,8 +1,8 @@
 from fastapi import APIRouter,Depends
-from services.ai_services import TextToImageService as service
+from app.services.ai_services import TextToImageService as service
 from db import schemas
-from db.models import Request,Generator
-from db.database import get_db
+from app.db.models import Request,Generator
+from app.db.database import get_db
 from sqlalchemy.orm import Session
 from sqlalchemy import insert
 
