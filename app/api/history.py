@@ -1,9 +1,9 @@
 from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy.orm import Session,joinedload
-from db.database import get_db
-from db.models import ChatHistory, ChatDetail, Generator
-from db.schemas import ChatCreate, ChatHistoryResponse
-from services.auth import Auth
+from app.db.database import get_db
+from app.db.models import ChatHistory, ChatDetail, Generator
+from app.db.schemas import ChatCreate, ChatHistoryResponse
+from app.services.auth import Auth
 
 router = APIRouter()
 
