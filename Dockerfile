@@ -1,6 +1,6 @@
 # Sử dụng một base image Python phù hợp
 # Nên dùng phiên bản slim để giảm kích thước image, ví dụ: python:3.12-slim-buster
-FROM python:3.12-slim-buster
+FROM python:3.12-slim-bullseye
 
 # --- Cài đặt các thư viện hệ thống cần thiết cho OpenCV ---
 # Cập nhật danh sách gói và cài đặt libgl1-mesa-glx
