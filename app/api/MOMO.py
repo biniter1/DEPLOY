@@ -12,7 +12,7 @@ import os
 from app.db.models import User, Transaction
 from app.db.schemas import PaymentRequest, UserSubscription
 
-from db import get_db
+from app.db import get_db
 
 load_dotenv()
 
