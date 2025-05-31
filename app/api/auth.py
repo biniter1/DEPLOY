@@ -1,6 +1,6 @@
 from fastapi import APIRouter, Depends, Response
 from app.services.auth import Auth
-from db import get_db
+from app.db import get_db
 from starlette.requests import Request
 from sqlalchemy.orm import Session
 
