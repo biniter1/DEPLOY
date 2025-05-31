@@ -9,8 +9,8 @@ import hmac
 import hashlib
 from dotenv import load_dotenv
 import os
-from db.models import User, Transaction
-from db.schemas import PaymentRequest, UserSubscription
+from app.db.models import User, Transaction
+from app.db.schemas import PaymentRequest, UserSubscription
 
 from db import get_db
 
