@@ -14,9 +14,9 @@ from openai import AsyncOpenAI
 import openai
 from runwayml import AsyncRunwayML
 import runwayml
-from openai_client_instance import openai_client_instance
+from app.openai_client_instance import openai_client_instance
 
-from db.schemas import AnalyzeRequest, ChatbotContentRequest, EnhanceTextRequest, FileTextToAnswerResponse, GenerateAnswerRequest, RunwayTextToVideoRequest, TextToAudioRequest, TextToCodeRequest, TextToImageRequest, TextToVideoRequest
+from app.db.schemas import AnalyzeRequest, ChatbotContentRequest, EnhanceTextRequest, FileTextToAnswerResponse, GenerateAnswerRequest, RunwayTextToVideoRequest, TextToAudioRequest, TextToCodeRequest, TextToImageRequest, TextToVideoRequest
 
 router = APIRouter()
 IMAGE_MIME_TYPES = ["image/jpeg", "image/png", "image/webp", "image/gif"]
