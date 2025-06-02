@@ -61,6 +61,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 # Sao chép các gói Python đã cài đặt từ builder stage
 COPY --from=builder /usr/local/lib/python3.11/site-packages /usr/local/lib/python3.11/site-packages
 # Sao chép mã nguồn ứng dụng
+COPY --from=builder /usr/local/bin/ /usr/local/bin/
+COPY --from=builder /usr/local/lib/python3.11/site-packages /usr/local/lib/python3.11/site-packages
+# Sao chép mã nguồn ứng dụng
 COPY ./app /app/app
 
 EXPOSE 8000
