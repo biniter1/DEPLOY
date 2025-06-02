@@ -198,7 +198,6 @@ python-logstash==0.4.8
 python-multipart==0.0.20
 pytweening==1.0.7
 pytz==2025.2
-pywin32==306
 pywin32-ctypes==0.2.3
 pyxnat==1.6.3
 PyYAML==6.0.2
