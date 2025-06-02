@@ -54,8 +54,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     libsm6 \
     libxext6 \
     libxrender-dev \
-    libpq5 \ # Thư viện runtime cho PostgreSQL (psycopg/psycopg2)
-    # BẤT KỲ THƯ VIỆN RUNTIME NÀO KHÁC BỊ THIẾU KHI ỨNG DỤNG KHỞI ĐỘNG
+    libpq5 \ 
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
