@@ -44,4 +44,3 @@ apscheduler
 tools
 frontend
 ffmpeg
-tesseract-ocr
