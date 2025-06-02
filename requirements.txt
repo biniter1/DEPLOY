@@ -43,7 +43,6 @@ runwayml
 apscheduler
 tools
 frontend
-libgl1
 ffmpeg
 tesseract-ocr
 libsndfile1
