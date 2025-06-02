@@ -48,6 +48,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 COPY ./requirements.txt /app/requirements.txt
 
 RUN pip install --no-cache-dir --upgrade pip && \
+    pip install --no-cache-dir torch==2.3.1+cpu torchvision==0.18.1+cpu torchaudio==2.3.1+cpu \
+        --index-url https://download.pytorch.org/whl/cpu && \
     pip install --no-cache-dir -r /app/requirements.txt
 
 # --------------------------------------------------------------------------------------------------
