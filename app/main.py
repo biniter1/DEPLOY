@@ -15,7 +15,7 @@ from app.db import init_db
 import logging
 import os
 from apscheduler.schedulers.background import BackgroundScheduler
-from openai_client_instance import lifespan
+from app.openai_client_instance import lifespan
 from redis import asyncio as aioredis
 from fastapi_limiter import FastAPILimiter
 load_dotenv()
