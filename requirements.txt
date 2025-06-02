@@ -1,3 +1,4 @@
+gunicorn
 accelerate==1.6.0
 acres==0.3.0
 aiohappyeyeballs==2.6.1
